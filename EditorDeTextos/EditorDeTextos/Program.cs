@@ -47,5 +47,18 @@
 
             Console.Write(texto);
         }        
+
+        static void Salvar(string texto)
+        {
+            Console.Clear();
+            Console.WriteLine("Qual o caminho para salvar o arquivo?");
+            var caminho = Console.ReadLine();
+
+            // o 'using' abre e fecha o arquivo
+            using (var file = new StreamWriter(caminho))
+            {
+                file.Write(texto);
+            }
+        }
     }
 }
