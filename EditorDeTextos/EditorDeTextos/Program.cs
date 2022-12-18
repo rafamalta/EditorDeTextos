@@ -32,7 +32,16 @@
 
         static void Criar()
         {
+            Console.Clear();
+            Console.WriteLine("Digite seu texto abaixo (ESC para sair) ");
+            Console.WriteLine("---------------------");
+            string texto = "";
 
+            // enquanto o comando for diferente de 'ESC'
+            while (Console.ReadKey().Key != ConsoleKey.Escape)
+            {
+
+            }
         }       
     }
 }
