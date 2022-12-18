@@ -37,11 +37,15 @@
             Console.WriteLine("---------------------");
             string texto = "";
 
-            // enquanto o comando for diferente de 'ESC'
-            while (Console.ReadKey().Key != ConsoleKey.Escape)
+            do
             {
-
+                texto += Console.ReadLine();
+                texto += Environment.NewLine;
             }
-        }       
+            // enquanto o comando for diferente de 'ESC'
+            while (Console.ReadKey().Key != ConsoleKey.Escape);
+
+            Console.Write(texto);
+        }        
     }
 }
