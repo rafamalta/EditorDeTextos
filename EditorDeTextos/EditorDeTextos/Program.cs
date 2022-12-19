@@ -45,7 +45,7 @@
             // enquanto o comando for diferente de 'ESC'
             while (Console.ReadKey().Key != ConsoleKey.Escape);
 
-            Console.Write(texto);
+            Salvar(texto);
         }        
 
         static void Salvar(string texto)
@@ -59,6 +59,9 @@
             {
                 file.Write(texto);
             }
+            Console.WriteLine($"Arquivo {caminho} salvo com sucesso!");
+            Console.ReadLine();
+            Menu();
         }
     }
 }
